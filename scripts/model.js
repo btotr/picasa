@@ -61,9 +61,3 @@ Model.prototype.fetchData = function(response, callback) {
     for (var i=0,l=photos.length;i<l;i++) this.urls.push(photos[i].getAttribute("url"));
 	callback(this.urls);
 }
-
-// test
-var model = new Model();
-model.getPreviewUrlsByPopularity(function(urls){
-    console.log(urls)
-})
